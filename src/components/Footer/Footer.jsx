@@ -59,7 +59,11 @@ function Footer() {
                   rel={item.label !== "Email"
                     ? "noopener noreferrer"
                     : undefined}
-                  aria-label={item.label}
+                  aria-label={
+  item.label === "Email"
+    ? "Email Aatmaj Deshpande"
+    : `${item.label} Profile`
+}
                   className="
                     text-2xl
                     text-gray-400
@@ -85,17 +89,17 @@ function Footer() {
           <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-sm text-gray-500">
             <span>Built with</span>
 
-            <FaReact className="text-cyan-400" />
+            <FaReact   aria-hidden="true" className="text-cyan-400" />
             <span>React</span>
 
             <span>•</span>
 
-            <RiTailwindCssFill className="text-sky-400" />
+            <RiTailwindCssFill aria-hidden="true" className="text-sky-400" />
             <span>Tailwind CSS</span>
 
             <span>•</span>
 
-            <SiFramer className="text-pink-400" />
+            <SiFramer aria-hidden="true" className="text-pink-400" />
             <span>Framer Motion</span>
           </div>
 

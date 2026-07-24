@@ -73,6 +73,7 @@ href={resume}
     href="https://github.com/aatmajd"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="GitHub Profile"
     className="text-gray-400 hover:text-white transition duration-300 text-2xl"
   >
     <FaGithub />
@@ -82,6 +83,7 @@ href={resume}
     href="https://linkedin.com/in/aatmaj-deshpande"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Linkedin Profile"
     className="text-gray-400 hover:text-[#0A66C2] transition duration-300 text-2xl"
   >
     <FaLinkedin />
@@ -89,6 +91,7 @@ href={resume}
 
   <a
     href="mailto:aatmajdeshpande@gmail.com"
+    aria-label="Email Aatmaj Deshpande"
     className="text-gray-400 hover:text-blue-400 transition duration-300 text-2xl"
   >
     <FaEnvelope />

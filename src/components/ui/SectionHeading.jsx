@@ -1,6 +1,6 @@
 function SectionHeading({ title, subtitle }) {
   return (
-    <div className="mb-16 text-center">
+    <div className="mb-12 text-center">
 
       <p className="text-blue-400 font-semibold tracking-widest uppercase">
         {subtitle}

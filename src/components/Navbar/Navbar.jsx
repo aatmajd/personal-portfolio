@@ -1,30 +1,49 @@
 function Navbar() {
+  const navItems = [
+    {
+      name: "About",
+      href: "#about",
+    },
+    {
+      name: "Skills",
+      href: "#skills",
+    },
+    {
+      name: "Experience",
+      href: "#experience",
+    },
+    {
+      name: "Projects",
+      href: "#projects",
+    },
+    {
+      name: "Contact",
+      href: "#contact",
+    },
+  ];
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-gray-950/70 backdrop-blur-xl border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
-
-        <h1 className="text-2xl font-bold tracking-wide">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/5 bg-gray-950/70 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+        <a
+          href="#hero"
+          className="text-2xl font-bold tracking-wide transition-colors duration-300 hover:text-blue-400"
+        >
           AYD
-        </h1>
+        </a>
 
-        <ul className="flex gap-8 text-gray-300">
-          <li className="cursor-pointer hover:text-white transition-colors duration-300">
-            About
-          </li>
-
-          <li className="cursor-pointer hover:text-white transition-colors duration-300">
-            Skills
-          </li>
-
-          <li className="cursor-pointer hover:text-white transition-colors duration-300">
-            Projects
-          </li>
-
-          <li className="cursor-pointer hover:text-white transition-colors duration-300">
-            Contact
-          </li>
+        <ul className="flex items-center gap-8 text-gray-300">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="relative transition-colors duration-300 hover:text-white"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
-
       </div>
     </nav>
   );

@@ -3,6 +3,8 @@ import HeroTerminal from "./HeroTerminal";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
+import resume from "/Users/aatmajdeshpande/portfolio/personal-portfolio/src/assets/resume/resume.pdf";
+
 
 function Hero() {
   return (
@@ -39,15 +41,19 @@ function Hero() {
 
   <div className="flex gap-4 mt-10">
 
-    <motion.button
+    <motion.a
+    href="#projects"
     whileHover={{scale: 1.05}}
     whileTap={{scale: 0.95}}
-    className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
+    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
     View Projects
-   </motion.button>
+   </motion.a>
 
 
-<motion.button
+<motion.a
+href={resume}
+
+  download="Aatmaj_Deshpande_Resume.pdf"
     whileHover={{
         scale: 1.05
     }}
@@ -57,7 +63,7 @@ function Hero() {
 
   className="border border-gray-600 hover:border-blue-400 hover:text-blue-400 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
     Download Resume
-  </motion.button>
+  </motion.a>
   
 </div>
 <div className="flex items-center gap-6 mt-10">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function HeroTerminal() {
     const terminalLines = [
@@ -53,10 +54,10 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, [typedCommand]);
   return (
-    <div className="h-52 font-mono text-sm bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden shadow-xl">
+    <div className="h-auto sm:h-52 font-mono text-xs sm:text-sm bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden shadow-xl">
 
       {/* Window Bar */}
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-700">
+      <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 sm:py-3 border-b border-gray-700">
 
         <div className="w-3 h-3 rounded-full bg-red-500"></div>
 
@@ -72,11 +73,11 @@ useEffect(() => {
 
       {/* Terminal Body */}
 
-      <div className="px-5 pt-2 font-mono text-sm ">
+      <div className="px-3 sm:px-5 pt-2 pb-3 sm:pb-0 font-mono text-xs sm:text-sm">
 
 
 
-  <p className="text-green-400">
+  <p className="break-all text-green-400">
     Aatmaj@portfolio:~$ {typedCommand}
     
   </p>
@@ -111,7 +112,7 @@ useEffect(() => {
 <p
     className={
         showNewPrompt
-            ? "text-green-400"
+            ? "break-all text-green-400"
             : "invisible"
     }
 >
@@ -120,13 +121,14 @@ useEffect(() => {
         {showCursor ? "█" : ""}
     </span>
 </p>
-
-
-
 </div>
 
     </div>
+    
+    
   );
+  
+  
 }
 
 export default HeroTerminal;

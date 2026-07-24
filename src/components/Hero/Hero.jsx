@@ -8,16 +8,16 @@ import resume from "/Users/aatmajdeshpande/portfolio/personal-portfolio/src/asse
 
 function Hero() {
   return (
-    <section  id="hero" className="relative overflow-hidden min-h-[calc(100vh-90px)] pt-10 flex items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black">
+    <section  id="hero" className="relative overflow-hidden min-h-[calc(100vh-90px)] flex items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black pt-20 pb-10 lg:pt-10 lg:pb-0">
       {/* Background Glow */}
 <div className="absolute -top-56 -left-32 w-[550px] h-[550px] rounded-full bg-blue-600/35 blur-[140px]" />
 
 <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full bg-cyan-500/25 blur-[140px]" />
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-8">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
           
           {/* Left Column */}
-         <motion.div
+         <motion.div className="order-2 lg:order-1 text-center lg:text-left"
          initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}>
@@ -25,27 +25,28 @@ function Hero() {
     👋 Hello, I'm
   </p>
 
-  <h1 className="text-6xl font-extrabold text-white mt-2 leading-tight">
+  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-2 leading-tight">
     AATMAJ <br />
     DESHPANDE
   </h1>
 
-  <h2 className="text-3xl font-semibold text-blue-400 mt-6">
+  <h2 className="text-2xl sm:text-3xl font-semibold text-blue-400 mt-6">
     B.E Information Technology Graduate
   </h2>
 
-  <p className="text-gray-400 mt-6 text-lg leading-8 max-w-xl">
+  <p className="text-gray-400 mt-6 text-base sm:text-lg leading-8 max-w-xl mx-auto lg:mx-0">
     I build scalable backend systems and modern web applications using
     Java, Spring Boot, React, Python, and cloud technologies.
   </p>
 
-  <div className="flex gap-4 mt-10">
+  <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
     <motion.a
     href="#projects"
     whileHover={{scale: 1.05}}
     whileTap={{scale: 0.95}}
-    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
+    className="inline-flex w-full sm:w-auto justify-center items-center bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+    >
     View Projects
    </motion.a>
 
@@ -61,12 +62,12 @@ href={resume}
         scale: 0.95
     }}
 
-  className="border border-gray-600 hover:border-blue-400 hover:text-blue-400 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
+  className="inline-flex w-full sm:w-auto justify-center border border-gray-600 hover:border-blue-400 hover:text-blue-400 px-6 py-3 rounded-xl font-semibold transition-all duration-300">
     Download Resume
   </motion.a>
   
 </div>
-<div className="flex items-center gap-6 mt-10">
+<div className="mt-10 flex items-center justify-center lg:justify-start gap-6">
 
   <a
     href="https://github.com/aatmajd"
@@ -97,7 +98,7 @@ href={resume}
 </motion.div>
 
           {/* Right Column */}
-          <div className="space-y-6 pt-12">
+          <div className="order-1 lg:order-2 space-y-6 pt-0 lg:pt-12">
             <motion.div
             whileHover={{scale: 1.02}}
     initial={{ opacity: 0, scale: 0.9 }}
@@ -129,6 +130,7 @@ href={resume}
 >
 
     <HeroTerminal />
+    
 
 </motion.div>
           </div>

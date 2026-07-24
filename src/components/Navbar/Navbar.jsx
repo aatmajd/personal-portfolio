@@ -196,7 +196,7 @@ useEffect(() => {
           <motion.li key={item.href} variants={itemVariants}>
             <a
               href={item.href}
-              //onClick={() => setMenuOpen(false)}
+              onClick={() => setMenuOpen(false)}
               className={`block px-8 py-4 transition-colors duration-300 ${
                 isActive
                   ? "text-blue-400"

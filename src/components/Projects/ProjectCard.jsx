@@ -14,15 +14,15 @@ function ProjectCard({
 }) {
   const imageSection = (
   <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
+    initial={{ opacity: 0,x: reverse ? -40 : 40,  scale: 0.95 }}
+    whileInView={{ opacity: 1,x: 0, scale: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
   >
     <div
       className={
         images.length > 1
-          ? "grid grid-cols-[0.8fr_1.2fr] gap-5 items-start"
+          ? "grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-5 items-start"
           : "flex justify-center"
       }
     >
@@ -48,9 +48,9 @@ function ProjectCard({
               className={
   image.type === "mobile"
     ? images.length > 1
-      ? "h-[320px] object-contain mx-auto transition duration-500"
-      : "h-[500px] object-contain mx-auto transition duration-500"
-    : "w-full max-h-[500px] object-cover transition duration-500"
+      ? "h-[280px] sm:h-[320px] object-contain mx-auto transition duration-500"
+      : "h-[400px] sm:h-[500px] object-contain mx-auto transition duration-500"
+      : "w-full max-h-[320px] sm:max-h-[500px] object-cover transition duration-500"
 }
             />
           </motion.div>
@@ -83,15 +83,15 @@ function ProjectCard({
         duration: 0.6,
       }}
     >
-      <span className="text-blue-400 font-medium">
+      <span className="text-blue-400 text-sm sm:text-base font-medium">
         {category.icon} {category.name}
       </span>
 
-      <h3 className="text-4xl font-bold text-white mt-4 leading-tight">
+      <h3 className="text-3xl sm:text-4xl font-bold text-white mt-4 leading-tight">
         {title}
       </h3>
 
-      <p className="text-gray-400 leading-8 mt-6">
+      <p className="text-sm sm:text-base text-gray-400 leading-7 sm:leading-8 mt-6">
         {description}
       </p>
 
@@ -103,7 +103,7 @@ function ProjectCard({
           >
             <FaCheckCircle className="text-blue-400" />
 
-            <span className="text-gray-300">
+            <span className="text-sm sm:text-base text-gray-300">
               {item}
             </span>
           </div>
@@ -115,14 +115,14 @@ function ProjectCard({
           <span
             key={tech}
             className="
-              px-4
-              py-2
+              px-3 sm:px-4
+              py-1.5 sm:py-2
               rounded-full
               bg-blue-500/10
               border
               border-blue-500/20
               text-blue-300
-              text-sm
+              text-xs sm:text-sm
               font-medium
               transition-all
               duration-300
@@ -134,7 +134,7 @@ function ProjectCard({
         ))}
       </div>
 
-      <div className="flex gap-4 mt-10">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 sm:mt-10">
         <a
           href={github}
           target="_blank"
@@ -144,8 +144,9 @@ inline-flex
 items-center
 gap-2
 rounded-xl
-px-6
+px-5 sm:px-6
 py-3
+justify-center
 bg-white/5
 border
 border-white/10
@@ -171,8 +172,9 @@ inline-flex
 items-center
 gap-2
 rounded-xl
-px-6
+px-5 sm:px-6
 py-3
+justify-center
 bg-white/5
 border
 border-white/10
@@ -194,19 +196,17 @@ hover:border-blue-400/50
   );
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      {reverse ? (
-        <>
-          {imageSection}
-          {textSection}
-        </>
-      ) : (
-        <>
-          {textSection}
-          {imageSection}
-        </>
-      )}
-    </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+  <div className={reverse ? "lg:order-2" : ""}>
+    {textSection}
+  </div>
+
+  <div className={reverse ? "lg:order-1" : ""}>
+    {imageSection}
+  </div>
+
+</div>
   );
 }
 

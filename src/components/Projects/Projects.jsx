@@ -40,7 +40,7 @@ function Projects() {
         "Gemini API",
       ],
 
-      github: "YOUR_GITHUB_LINK",
+      github: "https://github.com/aatmajd/NewsAnalysisV2",
 
       images: [
   {
@@ -74,7 +74,7 @@ function Projects() {
         "MySQL",
       ],
 
-      github: "YOUR_GITHUB_LINK",
+      github: "https://github.com/aatmajd/backend-patient-assistant-system",
 
       images: [
   {
@@ -144,7 +144,7 @@ function Projects() {
         "MySQL",
       ],
 
-      github: "YOUR_GITHUB_LINK",
+      github: "https://github.com/aatmajd/mkrishi_backend",
 
       images: [
   {
@@ -163,7 +163,7 @@ function Projects() {
         title="Projects"
       />
 
-      <div className="space-y-24">
+      <div className="space-y-16 lg:space-y-24">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.title}

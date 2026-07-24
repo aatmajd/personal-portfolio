@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
-import resume from "/Users/aatmajdeshpande/portfolio/personal-portfolio/src/assets/resume/resume.pdf";
+import resume from "../../assets/resume/resume.pdf";
 import {
   FaEnvelope,
   FaGithub,
@@ -47,7 +47,7 @@ function Contact() {
         transition={{ duration: 0.6 }}
         className="max-w-3xl mx-auto text-center"
       >
-        <p className="text-gray-400 text-lg leading-8">
+        <p className="text-gray-400 text-base sm:text-lg leading-7 sm:leading-8">
           I'm always interested in discussing software development,
           AI, backend engineering, Android development, or exciting
           opportunities. Feel free to reach out!
@@ -73,7 +73,7 @@ function Contact() {
     border-white/10
     bg-white/5
     backdrop-blur-md
-    p-5
+    p-4 sm:p-5
     transition-all
     duration-300
     hover:-translate-y-1
@@ -85,13 +85,12 @@ function Contact() {
     <div
       className="
         flex
-        h-12
-        w-12
+        h-10 w-10 sm:h-12 sm:w-12
         items-center
         justify-center
         rounded-xl
         bg-blue-500/10
-        text-xl
+        text-lg sm:text-xl
         text-blue-400
       "
     >
@@ -99,11 +98,11 @@ function Contact() {
     </div>
 
     <div className="text-left">
-      <h3 className="font-semibold text-white">
+      <h3 className="text-sm sm:text-base font-semibold text-white">
         {item.title}
       </h3>
 
-      <p className="text-gray-400">
+      <p className="text-sm sm:text-base text-gray-400 break-all sm:break-words">
         {item.value}
       </p>
     </div>
@@ -125,7 +124,7 @@ function Contact() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-5">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:aatmajdeshpande@gmail.com"
             className="
               inline-flex
               items-center

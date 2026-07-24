@@ -3,7 +3,7 @@ import HeroTerminal from "./HeroTerminal";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
-import resume from "../assets/resume/resume.pdf";
+import resume from "../../assets/resume/resume.pdf";
 
 
 function Hero() {

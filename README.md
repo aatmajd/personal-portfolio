@@ -1,16 +1,85 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with React, Vite, Tailwind CSS, and Framer Motion. This project showcases a clean, animated experience with sections for hero content, about, skills, experience, projects, and contact details.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Smooth, modern UI with glassmorphism-inspired visuals
+- Fully responsive layout for desktop and mobile
+- Animated section transitions and polished interactions
+- Dedicated sections for:
+  - Hero / introduction
+  - About me
+  - Skills
+  - Experience
+  - Projects
+  - Contact
+- Fast development workflow powered by Vite
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- ESLint for code quality
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```bash
+http://localhost:5173
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## 📁 Project Structure
+
+```bash
+src/
+  components/
+    About/
+    Contact/
+    Experience/
+    Footer/
+    Hero/
+    Navbar/
+    Projects/
+    Skills/
+    ui/
+  assets/
+```
+
+## 🎨 Customize It
+
+You can personalize this portfolio by updating:
+
+- Content in the component files under `src/components/`
+- Images and project assets in `src/assets/`
+- Styling and visuals in `src/index.css` and component-level CSS
+
+## 📬 Contact
+
+If you want to connect or discuss improvements, feel free to reach out through the contact section in the portfolio.

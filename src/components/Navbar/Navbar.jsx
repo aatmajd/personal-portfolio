@@ -4,7 +4,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
 
         <h1 className="text-2xl font-bold tracking-wide">
-          AD
+          AYD
         </h1>
 
         <ul className="flex gap-8 text-gray-300">

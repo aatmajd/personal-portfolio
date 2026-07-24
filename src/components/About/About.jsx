@@ -11,6 +11,7 @@ function About() {
   {
     title: "Education",
     value: "B.E Information Technology (Honours in AI&ML) - SPPU (2026)",
+    value1:"First Class with Distinction",
     icon: FaGraduationCap
     
   },
@@ -34,7 +35,7 @@ function About() {
                 title="About Me"
             />
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
                 {/* Left */}
 
@@ -47,22 +48,22 @@ function About() {
 
     transition={{ duration: 0.6 }}>
 
-                    <div className="space-y-6 border-l-4 border-blue-500 pl-6">
+                    <div className="space-y-5 border-l-2 sm:border-l-4 border-blue-500 pl-4 sm:pl-6">
 
-  <p className="text-gray-300 leading-9 text-lg">
+  <p className="text-gray-300 leading-8 sm:leading-9 text-base sm:text-lg">
     I'm Aatmaj Deshpande, an Information Technology graduate with a
     passion for designing scalable backend systems and modern web
     applications.
   </p>
 
-  <p className="text-gray-400 leading-9">
+  <p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
     My primary focus is backend development using Java and Spring Boot,
     while also building intuitive frontends with React. I enjoy solving
     challenging engineering problems and writing clean, maintainable
     software.
   </p>
 
-  <p className="text-gray-400 leading-9">
+  <p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
     Outside of coding, I enjoy exploring distributed systems, cloud
     technologies, artificial intelligence, and continuously learning new
     tools that help me become a better software engineer.
@@ -109,7 +110,7 @@ will-change-transform
         backdrop-blur-md
         border border-gray-800
         rounded-3xl
-        p-8
+        p-5 sm:p-8
         shadow-xl
 
         transition-all
@@ -130,7 +131,7 @@ will-change-transform
         <div
             key={fact.title}
             className="
-                py-5
+                py-4 sm:py-5
                 border-b
                 border-gray-800
                 last:border-b-0
@@ -139,15 +140,18 @@ will-change-transform
             "
         >
             <div className="flex items-center gap-3">
-                <Icon className="text-blue-400 text-xl" />
+                <Icon className="text-blue-400 text-lg sm:text-xl" />
 
                 <h3 className="text-blue-400 font-semibold">
                     {fact.title}
                 </h3>
             </div>
 
-            <p className="text-gray-300 mt-3 leading-7">
+            <p className="text-gray-300 mt-2 sm:mt-3 leading-6 sm:leading-7 text-sm sm:text-base">
                 {fact.value}
+            </p>
+            <p className="text-gray-300 mt-2 sm:mt-3 leading-6 sm:leading-7 text-sm sm:text-base" style={{ fontStyle: 'italic' }}>
+                {fact.value1}
             </p>
         </div>
     );

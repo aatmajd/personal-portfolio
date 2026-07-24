@@ -32,7 +32,7 @@ function SkillCard({ title, icon: Icon, skills }) {
         border
         border-gray-800
         rounded-3xl
-        p-8
+        p-5 sm:p-8
         shadow-xl
 
         transition-all
@@ -43,11 +43,10 @@ function SkillCard({ title, icon: Icon, skills }) {
         hover:shadow-blue-500/10
       "
     >
-      <div className="flex items-center gap-3 mb-5">
+      <div className="flex items-center gap-3 mb-4 sm:mb-5">
         <div
           className="
-            h-12
-            w-12
+            h-10 w-10 sm:h-12 sm:w-12
             rounded-xl
             bg-blue-500/10
             flex
@@ -55,15 +54,15 @@ function SkillCard({ title, icon: Icon, skills }) {
             justify-center
           "
         >
-          <Icon className="text-blue-400 text-2xl " />
+          <Icon className="text-blue-400 text-xl sm:text-2xl " />
         </div>
 
-        <h3 className="text-2xl font-semibold text-white">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white">
           {title}
         </h3>
       </div>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-2 sm:gap-3">
         {skills.map((skill, index) => (
           <motion.span
             key={skill}
@@ -86,8 +85,8 @@ function SkillCard({ title, icon: Icon, skills }) {
               scale: 1.05,
             }}
             className="
-              px-4
-              py-2
+              px-3 sm:px-4
+py-1.5 sm:py-2
               rounded-full
               
 
@@ -96,7 +95,7 @@ function SkillCard({ title, icon: Icon, skills }) {
               border-blue-500/20
 
               text-blue-300
-              text-sm
+              text-xs sm:text-sm
               font-semibold
 
               transition-all

@@ -116,8 +116,19 @@ html {
 }
 
 body {
+  user-select: none;
+  -webkit-user-select: none;
   margin: 0;
   background: #030712;
   color: white;
   font-family: Inter, sans-serif;
+}
+img {
+
+  -webkit-user-drag: none;
+
+  user-drag: none;
+
+  pointer-events: none;/
+
 }

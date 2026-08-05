@@ -14,7 +14,7 @@ function Hero() {
 
 <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full bg-cyan-500/25 blur-[140px]" />
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-11 lg:gap-16 items-center">
           
           {/* Left Column */}
          <motion.div className="order-2 lg:order-1 text-center lg:text-left"

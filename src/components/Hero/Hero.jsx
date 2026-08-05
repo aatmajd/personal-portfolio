@@ -8,7 +8,7 @@ import resume from "../../assets/resume/resume.pdf";
 
 function Hero() {
   return (
-    <section  id="hero" className="relative overflow-hidden min-h-[110vh] lg:min-h-screen flex items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black pt-20 pb-10 lg:pt-20 lg:pb-0">
+    <section  id="hero" className="relative overflow-hidden min-h-[110vh] lg:min-h-screen flex items-start lg:items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black pt-20 pb-10 lg:pt-20 lg:pb-0">
       {/* Background Glow */}
 <div className="absolute -top-56 -left-32 w-[550px] h-[550px] rounded-full bg-blue-600/35 blur-[140px]" />
 

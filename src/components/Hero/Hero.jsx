@@ -8,13 +8,13 @@ import resume from "../../assets/resume/resume.pdf";
 
 function Hero() {
   return (
-    <section  id="hero" className="relative overflow-hidden min-h-[calc(100vh-90px)] flex items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black pt-20 pb-10 lg:pt-10 lg:pb-0">
+    <section  id="hero" className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-gray-950 via-gray-900 to-black pt-20 pb-10 lg:pt-24 lg:pb-0">
       {/* Background Glow */}
 <div className="absolute -top-56 -left-32 w-[550px] h-[550px] rounded-full bg-blue-600/35 blur-[140px]" />
 
 <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full bg-cyan-500/25 blur-[140px]" />
       <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left Column */}
          <motion.div className="order-2 lg:order-1 text-center lg:text-left"
@@ -31,7 +31,7 @@ function Hero() {
   </h1>
 
   <h2 className="text-2xl sm:text-3xl font-semibold text-blue-400 mt-6">
-    B.E Information Technology Graduate
+    B.E. Information Technology Graduate
   </h2>
 
   <p className="text-gray-400 mt-6 text-base sm:text-lg leading-8 max-w-xl mx-auto lg:mx-0">

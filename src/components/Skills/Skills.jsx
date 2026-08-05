@@ -11,7 +11,16 @@ import {
 } from "react-icons/fa";
 
 function Skills() {
-    const skillCategories = [
+import {
+  FaCode,
+  FaServer,
+  FaBrain,
+  FaDatabase,
+  FaCloud,
+  FaTools,
+} from "react-icons/fa";
+
+const skillCategories = [
   {
     title: "Programming",
     icon: FaCode,
@@ -24,7 +33,7 @@ function Skills() {
     ],
   },
   {
-    title: "Backend & APIs",
+    title: "Backend",
     icon: FaServer,
     skills: [
       "Spring Boot",
@@ -35,38 +44,56 @@ function Skills() {
     ],
   },
   {
-    title: "AI & Machine Learning",
+    title: "AI & ML",
     icon: FaBrain,
     skills: [
       "Machine Learning",
+
       "Deep Learning",
+
       "NLP",
+
       "PyTorch",
+
       "TensorFlow",
+
       "OpenCV",
+
       "scikit-learn",
+
       "Pandas",
+
       "NumPy",
     ],
   },
   {
-    title: "Databases & Cloud",
+    title: "Databases",
     icon: FaDatabase,
     skills: [
       "MySQL",
+      "MongoDB",
       "PostgreSQL",
+      "Supabase",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: FaCloud,
+    skills: [
       "Azure",
       "Docker",
+      "CI/CD",
       "Grafana",
     ],
   },
   {
-    title: "DevOps & Tools",
+    title: "Tools",
     icon: FaTools,
     skills: [
       "Git",
       "GitHub",
-      "CI/CD",
+      "Forgejo",
+      "GitLab",
       "Linux",
       "VS Code",
     ],

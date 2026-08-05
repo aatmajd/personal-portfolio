@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 
 function Skills() {
-  const skillCategories = [
     const skillCategories = [
   {
     title: "Programming",

@@ -2,13 +2,6 @@ import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
 import SkillCard from "./SkillCard";
 
-import {
-  FaCode,
-  FaServer,
-  FaDatabase,
-  FaTools,
-  FaBrain,
-} from "react-icons/fa";
 
 function Skills() {
 import {

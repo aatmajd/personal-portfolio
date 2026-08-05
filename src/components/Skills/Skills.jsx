@@ -1,9 +1,6 @@
 import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
 import SkillCard from "./SkillCard";
-
-
-function Skills() {
 import {
   FaCode,
   FaServer,
@@ -13,6 +10,7 @@ import {
   FaTools,
 } from "react-icons/fa";
 
+function Skills() {
 const skillCategories = [
   {
     title: "Programming",

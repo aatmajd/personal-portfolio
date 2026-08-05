@@ -50,24 +50,27 @@ function About() {
 
                     <div className="space-y-5 border-l-2 sm:border-l-4 border-blue-500 pl-4 sm:pl-6">
 
-  <p className="text-gray-300 leading-8 sm:leading-9 text-base sm:text-lg">
-    I'm Aatmaj Deshpande, an Information Technology graduate with a
-    passion for designing scalable backend systems and modern web
-    applications.
-  </p>
+ <p className="text-gray-300 leading-8 sm:leading-9 text-base sm:text-lg">
+  I'm Aatmaj Deshpande, a recent B.E. Information Technology graduate
+  with Honours in Artificial Intelligence & Machine Learning. Through
+  internships, research, and real-world projects, I've gained practical
+  experience in backend development, AI-powered applications, Android
+  development, and Natural Language Processing.
+</p>
 
-  <p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
-    My primary focus is backend development using Java and Spring Boot,
-    while also building intuitive frontends with React. I enjoy solving
-    challenging engineering problems and writing clean, maintainable
-    software.
-  </p>
+<p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
+  I enjoy building reliable backend systems using Java, Spring Boot,
+  Python, and modern web technologies while applying AI and machine
+  learning to solve real-world problems. I'm passionate about writing
+  clean, maintainable software and continuously improving as a developer.
+</p>
 
-  <p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
-    Outside of coding, I enjoy exploring distributed systems, cloud
-    technologies, artificial intelligence, and continuously learning new
-    tools that help me become a better software engineer.
-  </p>
+<p className="text-gray-400 leading-8 sm:leading-9 text-sm sm:text-base">
+  I'm currently seeking Software Engineer opportunities where I can
+  contribute to impactful products, collaborate with experienced teams,
+  and continue growing in backend development, cloud technologies, and
+  AI-driven software engineering.
+</p>
 
 </div>
 

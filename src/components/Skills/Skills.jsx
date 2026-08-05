@@ -1,60 +1,95 @@
 import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
 import SkillCard from "./SkillCard";
-
 import {
   FaCode,
   FaServer,
+  FaBrain,
   FaDatabase,
+  FaCloud,
   FaTools,
 } from "react-icons/fa";
 
 function Skills() {
-  const skillCategories = [
-    {
-      title: "Frontend",
-      icon: FaCode,
-      skills: [
-        "React",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML5",
-        "CSS3",
-      ],
-    },
-    {
-      title: "Backend",
-      icon: FaServer,
-      skills: [
-        "Java",
-        "Spring Boot",
-        "Python",
-        "FastAPI",
-        "REST APIs",
-      ],
-    },
-    {
-      title: "Database",
-      icon: FaDatabase,
-      skills: [
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "Supabase",
-      ],
-    },
-    {
-      title: "Tools",
-      icon: FaTools,
-      skills: [
-        "Git",
-        "GitHub",
-        "Docker",
-        "Linux",
-        "VS Code",
-      ],
-    },
-  ];
+const skillCategories = [
+  {
+    title: "Programming",
+    icon: FaCode,
+    skills: [
+      "Java",
+      "Python",
+      "JavaScript",
+      "C/C++",
+      "HTML/CSS",
+    ],
+  },
+  {
+    title: "Backend",
+    icon: FaServer,
+    skills: [
+      "Spring Boot",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "React",
+    ],
+  },
+  {
+    title: "AI & ML",
+    icon: FaBrain,
+    skills: [
+      "Machine Learning",
+
+      "Deep Learning",
+
+      "NLP",
+
+      "PyTorch",
+
+      "TensorFlow",
+
+      "OpenCV",
+
+      "scikit-learn",
+
+      "Pandas",
+
+      "NumPy",
+    ],
+  },
+  {
+    title: "Databases",
+    icon: FaDatabase,
+    skills: [
+      "MySQL",
+      "MongoDB",
+      "PostgreSQL",
+      "Supabase",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: FaCloud,
+    skills: [
+      "Azure",
+      "Docker",
+      "CI/CD",
+      "Grafana",
+    ],
+  },
+  {
+    title: "Tools",
+    icon: FaTools,
+    skills: [
+      "Git",
+      "GitHub",
+      "Forgejo",
+      "GitLab",
+      "Linux",
+      "VS Code",
+    ],
+  },
+];
 
   return (
     <Section id="skills">

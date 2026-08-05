@@ -35,8 +35,7 @@ function Hero() {
   </h2>
 
   <p className="text-gray-400 mt-6 text-base sm:text-lg leading-8 max-w-xl mx-auto lg:mx-0">
-    I build scalable backend systems and modern web applications using
-    Java, Spring Boot, React, Python, and cloud technologies.
+    Recent Information Technology graduate with hands-on experience in backend development, AI-powered applications, and Android development through internships, research, and real-world projects. Passionate about building scalable software and continuously learning modern technologies.
   </p>
 
   <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

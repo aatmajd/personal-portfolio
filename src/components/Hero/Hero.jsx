@@ -25,7 +25,7 @@ function Hero() {
     👋 Hello, I'm
   </p>
 
-  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-2 leading-normal">
+  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-2 leading-tight">
     AATMAJ <br />
     DESHPANDE
   </h1>

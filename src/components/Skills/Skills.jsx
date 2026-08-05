@@ -7,54 +7,72 @@ import {
   FaServer,
   FaDatabase,
   FaTools,
+  FaBrain,
 } from "react-icons/fa";
 
 function Skills() {
   const skillCategories = [
-    {
-      title: "Frontend",
-      icon: FaCode,
-      skills: [
-        "React",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML5",
-        "CSS3",
-      ],
-    },
-    {
-      title: "Backend",
-      icon: FaServer,
-      skills: [
-        "Java",
-        "Spring Boot",
-        "Python",
-        "FastAPI",
-        "REST APIs",
-      ],
-    },
-    {
-      title: "Database",
-      icon: FaDatabase,
-      skills: [
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "Supabase",
-      ],
-    },
-    {
-      title: "Tools",
-      icon: FaTools,
-      skills: [
-        "Git",
-        "GitHub",
-        "Docker",
-        "Linux",
-        "VS Code",
-      ],
-    },
-  ];
+    const skillCategories = [
+  {
+    title: "Programming",
+    icon: FaCode,
+    skills: [
+      "Java",
+      "Python",
+      "JavaScript",
+      "C/C++",
+      "HTML/CSS",
+    ],
+  },
+  {
+    title: "Backend & APIs",
+    icon: FaServer,
+    skills: [
+      "Spring Boot",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "React",
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    icon: FaBrain,
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "PyTorch",
+      "TensorFlow",
+      "OpenCV",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+    ],
+  },
+  {
+    title: "Databases & Cloud",
+    icon: FaDatabase,
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "Azure",
+      "Docker",
+      "Grafana",
+    ],
+  },
+  {
+    title: "DevOps & Tools",
+    icon: FaTools,
+    skills: [
+      "Git",
+      "GitHub",
+      "CI/CD",
+      "Linux",
+      "VS Code",
+    ],
+  },
+];
 
   return (
     <Section id="skills">
